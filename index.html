@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<style>
+	html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Documentation</title>
+</head>
+<body>
+<nav id="navbar">
+  <header>HTML Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#HTML">HTML</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Key Resources</a></li>
+    <li><a class="nav-link" href="#Variables">Beginner's Tutorials</a></li>
+    <li>
+      <a class="nav-link" href="#Declaring_variables">Advanced Topics</a>
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+      </p>
+
+      <p>
+"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="HTML">
+    <header>HTML</header>
+    <article>
+      <p>
+        HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as head, title, body, header, footer, article, section, p, div, span, img, aside, audio, canvas, datalist, details, embed, nav, output, progress, video, ul, ol, li and many others.
+        </p>
+      <p>
+        An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<" and ">". The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the <'title'> tag can be written as <'Title'>, <'TITLE'>, or in any other way.
+      </p>
+      <p>
+        The articles below can help you learn more about HTML.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>Key Resources</header>
+    <article>
+      <h3>HTML Introduction</h3>
+      <p>If you're new to Web development, be sure to read our <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML Basics </a>article to learn what HTML is and how to use it.</p>
+
+      <h3>HTML Tutorials</h3>
+<p>For articles about how to use HTML, as well as tutorials and complete examples, check out our <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML Learning Area</a>.</p>
+
+      <h3>HTML Reference</h3>
+      <p>In our extensive <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">HTML reference</a> section, you'll find the details about every element and attribute in HTML.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Beginner's Tutorials</header>
+    <p>
+      Our <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML Learning Area</a> features multiple modules that teach HTML from the ground up — no previous knowledge required.
+    </p>
+    <p>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">Introduction to HTML</a></h3>
+This module sets the stage, getting you used to important concepts and syntax such as looking at applying HTML to text, how to create hyperlinks, and how to use HTML to structure a web page.
+    </p>
+    <p>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding">Multimedia and embedding</a></h3>
+This module explores how to use HTML to include multimedia in your web pages, including the different ways that images can be included, and how to embed video, audio, and even entire other webpages.
+    </p>
+<p>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables">HTML Tables</a></h3>
+Representing tabular data on a webpage in an understandable, accessible way can be a challenge. This module covers basic table markup, along with more complex features such as implementing captions and summaries.
+    </p>
+<p>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms">HTML Forms</a></h3>
+Forms are a very important part of the Web — these provide much of the functionality you need for interacting with websites, e.g. registering and logging in, sending feedback, buying products, and more. This module gets you started with creating the client-side/front-end parts of forms.
+    </p>
+<p>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto">Use HTML to solve common problems</a></h3>
+Provides links to sections of content explaining how to use HTML to solve very common problems when creating a web page: dealing with titles, adding images or videos, emphasizing content, creating a basic form, etc.
+    </p>
+  </section>
+  <section class="main-section" id="Declaring_variables">
+    <header>Advanced Topics</header>
+    <article>
+      <p>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image">CORS enabled image</a></h3>
+The crossorigin attribute, in combination with an appropriate CORS header, allows images defined by the <'img'> element to be loaded from foreign origins and used in a <'canvas'> element as if they were being loaded from the current origin.
+    </p>
+      <p>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin">CORS settings attributes</a></h3>
+Some HTML elements that provide support for CORS, such as <'img'> or <'video'>, have a crossorigin attribute (crossOrigin property), which lets you configure the CORS requests for the element's fetched data.
+    </p>
+      <p>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload">Preloading content with rel="preload"</a></h3>
+The preload value of the <'link'> element's rel attribute allows you to write declarative fetch requests in your HTML <'head'>, specifying resources that your pages will need very soon after loading, which you therefore want to start preloading early in the lifecycle of a page load, before the browser's main rendering machinery kicks in. This ensures that they are made available earlier and are less likely to block the page's first render, leading to performance improvements. This article provides a basic guide to how preload works.
+    </p>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">HTML Refrences.</a>
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>
